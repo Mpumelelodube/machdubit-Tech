@@ -1,0 +1,316 @@
+.navbar-inverse.nav-upper {
+  height: 50px;
+}
+.navbar-inverse.nav-upper ul {
+  float: right;
+  display: table;
+}
+.navbar-inverse.nav-upper .navbar-upper > li {
+  display: table-cell;
+  font-size: 14px;
+}
+.navbar-inverse.nav-upper .navbar-upper > li > a {
+  color: rgb(255, 255, 255);
+}
+@media (min-width: 768px) {
+  .navbar.navbar-lower .navbar-nav {
+    margin-left: 100px;
+  }
+}
+.navbar-logo {
+  background-image: url('../images/officialLogoStrip2.png');
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 5px;
+  left: 15px;
+  z-index: 1051;
+}
+
+@-o-keyframes navbar-transition {
+  0%   { background-color:transparent; }
+  100% { background-color: #fff; }
+}
+@keyframes navbar-transition {
+  0%   { background-color: transparent; }
+  100% { background-color: #fff; }
+}
+
+.navbar-transition{    
+    background-image:none !important; 
+         -o-animation: navbar-transition 0.5s ease-in-out; 
+            animation: navbar-transition 0.5s ease-in-out; 
+            background-color: #fff;
+}
+
+
+
+
+
+
+
+.btns-nav{
+    background-color: transparent;
+    border: solid;
+    border-color: transparent;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    outline: none;
+    font-size: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+    color: #50ade6;
+    text-decoration:none
+}
+
+.btns-nav:hover{
+    color: #25265e;
+    border: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.btns-nav-services{
+  background-color: transparent;
+  border: solid;
+  border-color: transparent;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  outline: none;
+  font-size: 30px;
+  margin-right: 60px;
+  margin-left: 60px;
+  color: aliceblue;
+  text-decoration:none
+}
+
+.btns-nav-services:hover{
+  color: #25265e;
+  border: solid;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+}
+
+.btns-nav-services-black{
+  background-color: transparent;
+  border: solid;
+  border-color: transparent;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  outline: none;
+  font-size: 30px;
+  margin-right: 60px;
+  margin-left: 60px;
+  color: rgb(0, 0, 0);
+  text-decoration:none
+}
+
+.btns-nav-services-black:hover{
+  color: #25265e;
+  border: solid;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+}
+
+.btns-nav-shop{
+  background-color: transparent;
+  border: solid;
+  border-color: transparent;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  outline: none;
+  font-size: 30px;
+  margin-right: 60px;
+  margin-left: 60px;
+  color: rgb(0, 0, 0);
+  text-decoration:none
+}
+
+.btns-nav-shop:hover{
+  color: #4b4b50;
+  border: solid;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+}
+
+.n-bg{
+  background-color: rgba(255, 255, 255, 0.699);
+}
+
+.my_footer{
+  background-image: url(images/footer.jpg);
+  height: 300px;
+  background-size:70%;
+  background-repeat: no-repeat;
+  background-color: #25265e33;
+  border-top-left-radius: 50%;
+}
+
+.my_footer:hover{
+  filter: grayscale(0.3);
+}
+
+.btns-nav:focus{
+    outline: none;
+}
+
+.row-cards{
+    display: flex;
+   flex-wrap: wrap;
+}
+
+.col-cardss {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.light-pink:hover{
+    background-color: #25265e1e;
+}
+
+@-o-keyframes fadeIt {
+    0%   { background-color: #25265e00; }
+    50%  { background-color: #25265e0a; }
+    100% { background-color: #25265e28; }
+  }
+  @keyframes fadeIt {
+    0%   { background-color: #25265e00; }
+    50%  { background-color: #25265e0a; }
+    100% { background-color: #25265e28; }
+  }
+  
+  .trans{    
+      background-image:none !important; 
+           -o-animation: fadeIt 5s ease-in-out; 
+              animation: fadeIt 5s ease-in-out; 
+              background-color: #25265e28;
+  }
+
+
+
+
+.crd{
+    border: none;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    width: 120%;
+    padding-top: 55%;
+    
+}
+
+
+.crd:hover{
+  filter: brightness(0.9);
+  
+}
+
+.hide{
+  display: none;
+}
+
+
+
+@-o-keyframes buttonReview {
+  0%   { background-color: transparent; }
+  
+  100% { background-color: black; }
+}
+@keyframes buttonReview {
+  0%   { background-color: transparent; }
+  
+  100% { background-color: black; }
+}
+
+.buttonZoom{     
+         -o-animation: zoomIt 0.5s ease-in-out; 
+            animation: zoomIt 0.5s ease-in-out; 
+            background-size: 100%;
+            
+}
+
+.inner-card-button{
+    align-self: center;
+    border-radius: 0px;
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    
+            height: 50px;
+            width: 80px;
+}
+
+.inner-card-button:hover{
+  align-self: center;
+  border-radius: 0px;
+  color: white;
+  background-color: rgb(51, 48, 48);
+  border-color: black;
+  
+          height: 50px;
+          width: 80px;
+}
+
+.review-button{
+  -o-animation: buttonReview 1s ease-in-out; 
+            animation: buttonReview 1s ease-in-out;
+              background-color:black ;
+              color: white;
+}
+
+
+@-o-keyframes zoomIt {
+    0%   { background-size: 80% }
+    
+    100% { background-size: 100%; }
+  }
+  @keyframes zoomIt {
+    0%   { background-size: 80% }
+    
+    100% { background-size: 100%; }
+  }
+  
+  .zoom{     
+           -o-animation: zoomIt 0.5s ease-in-out; 
+              animation: zoomIt 0.5s ease-in-out; 
+              background-size: 100%;
+              
+  }
+
+  @-o-keyframes zoomOut {
+    0%   { background-size: 100% }
+    
+    100% { background-size: 80%; }
+  }
+  @keyframes zoomOut {
+    0%   { background-size: 100% }
+    
+    100% { background-size: 80%; }
+  }
+  
+  .zoomOut{     
+           -o-animation: zoomOut 0.5s ease-in-out; 
+              animation: zoomOut 0.5s ease-in-out; 
+              background-size: 80%;
+              
+  }
