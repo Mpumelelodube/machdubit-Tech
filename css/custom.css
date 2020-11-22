@@ -3,3 +3,10 @@
     color: #50ade6;
 }
 
+.cbg-white{
+    background-color: rgb(194, 72, 72);
+}
+
+.cbg-white:hover{
+    background-color: rgba(0, 0, 0, 0.068);
+}
