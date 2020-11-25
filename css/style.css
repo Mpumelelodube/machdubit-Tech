@@ -463,8 +463,8 @@ a img.aligncenter {
 
 .header_style_01 .navbar-default .navbar-nav > li a.active {
     color: #ffffff;
-    box-shadow: 0 10px 20px 0 rgba(5, 16, 44, .15);
-    border-radius: 25px 0px 25px 0px;
+    box-shadow: 0 10px 20px 0 rgba(5, 16, 44, 0.24);
+    border-radius: 25px 25px 25px 25px;
     background: #50ade6;
 }
 
