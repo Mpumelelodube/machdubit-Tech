@@ -30,6 +30,79 @@
 <!-- Modernizer for Portfolio -->
 <script src="js/modernizer.js"></script>
 
+<!--Submit To Api-->
+<script>
+    function submitToAPI(e) {
+       e.preventDefault();
+       var URL = "https://ecelo8y9qi.execute-api.us-east-1.amazonaws.com/01/contact-us";
+
+            var Namere = /[A-Za-z]{1}[A-Za-z]/;
+            if (!Namere.test($("#first_name").val())) {
+                         alert ("Name can not less than 2 char");
+                return;
+            }
+            var last_namere = /[A-Za-z]{1}[A-Za-z]/;
+            if (!last_namere.test($("#last_name").val())) {
+                         alert ("Last Name can not less than 2 char");
+                return;
+            }
+            var mobilere = /[0-9]{10}/;
+            if (!mobilere.test($("#phone").val())) {
+                alert ("Please enter valid mobile number");
+                return;
+            }
+            if ($("#email").val()=="") {
+                alert ("Please enter your email id");
+                return;
+            }
+
+            var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+            if (!reeamil.test($("#email").val())) {
+                alert ("Please enter valid email address");
+                return;
+            }
+
+       var first_name = $("first_name").val();
+       var last_name = $("#last_name").val();
+       var phone = $("#phone").val();
+       var email = $("#email").val();
+       var select_service = $("#select_service").val();
+       var select_price = $("#select_price").val();
+       var aditional_information = $("#aditional_information").val();
+       
+       var data = {
+          first_name : first_name,
+          last_name : last_name,
+          phone : phone,
+          email : email,
+          select_service : select_service,
+          select_price : select_price,
+          aditional_information : aditional_information
+        };
+
+       $.ajax({
+         type: "POST",
+         url : "https://ecelo8y9qi.execute-api.us-east-1.amazonaws.com/01/contact-us",
+         dataType: "json",
+         crossDomain: "true",
+         contentType: "application/json; charset=utf-8",
+         data: JSON.stringify(data),
+
+         
+         success: function () {
+           // clear form and show a success message
+           alert("Successfull");
+           document.getElementById("contactform").reset();
+       location.reload();
+         },
+         error: function () {
+           // show an error message
+           alert("UnSuccessfull");
+         }});
+     }
+</script>
+<!--End Script-->
+
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -137,7 +210,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="contact_form">
                     <div id="message"></div>
-                    <form action="contact.php" class="row" id="contactform" method="post" name="contactform">
+                    <form class="row" id="contactform" method="post" name="contactform">
                         <fieldset class="row-fluid">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <input class="form-control" id="first_name" name="first_name" placeholder="First Name"
@@ -176,7 +249,7 @@
                                 </select>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <textarea class="form-control" id="comments" name="comments"
+                                <textarea class="form-control" id="aditional_information" name="aditional_information"
                                           placeholder="Give us more details.." rows="6"></textarea>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
