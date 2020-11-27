@@ -34,7 +34,7 @@
 <script>
     function submitToAPI(e) {
        e.preventDefault();
-       var URL = "https://zeq8h9o9dh.execute-api.us-east-2.amazonaws.com/1";
+       var URL = "https://zeq8h9o9dh.execute-api.us-east-2.amazonaws.com/1/contact";
 
             var Namere = /[A-Za-z]{1}[A-Za-z]/;
             if (!Namere.test($("#first_name").val())) {
@@ -82,7 +82,7 @@
 
        $.ajax({
          type: "POST",
-         url : "https://zeq8h9o9dh.execute-api.us-east-2.amazonaws.com/1",
+         url : "https://zeq8h9o9dh.execute-api.us-east-2.amazonaws.com/1/contact",
          dataType: "json",
          crossDomain: "true",
          contentType: "application/json; charset=utf-8",
