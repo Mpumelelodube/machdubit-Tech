@@ -1,0 +1,8 @@
+serve.cjs
+README.md
+.git/
+.github/
+node_modules/
+wrangler.json
+wrangler.jsonc
+wrangler.toml
