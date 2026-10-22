@@ -1,0 +1,12 @@
+Quaternius classic animated characters
+Creator: Quaternius (https://quaternius.com/)
+License: CC0 1.0 Universal (SPDX: CC0-1.0)
+
+These four character models were distributed by their creator under CC0.
+They may be copied, modified and used commercially without attribution.
+Credit to Quaternius is appreciated and retained in this project's asset notes.
+
+License summary: https://creativecommons.org/publicdomain/zero/1.0/
+Legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Source model links and local processing details are in README.md.

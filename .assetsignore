@@ -3,6 +3,7 @@ README.md
 .git/
 .github/
 node_modules/
+tests/
 wrangler.json
 wrangler.jsonc
 wrangler.toml
